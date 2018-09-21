@@ -21,7 +21,7 @@ import com.cg.bankingapp.exception.BankingException;
 
 @Repository
 public class BankingDaoImpl implements IBankingDao {
-	private final Logger LOGGER = Logger.getLogger(BankingDaoImpl.class);
+	public static final Logger LOGGER = Logger.getLogger(BankingDaoImpl.class);
 
 	@PersistenceContext
 	private EntityManager entityManager;
